@@ -73,13 +73,13 @@ bitbake -e
 
 bitbake -e <image> | grep ^IMAGE_ROOTFS
 
-bitbake-getvar 
+bitbake-getvar
 
 ## Tworzenie własnych warstw
 
 Stwórz nową warstwę za pomocą bitbake-layers:
 
-    bitbake-layers create-layer -a 
+    bitbake-layers create-layer -a meta-ifm
 
 Potwierdź że została poprawnie dodana:
 

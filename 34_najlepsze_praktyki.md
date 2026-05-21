@@ -6,8 +6,8 @@
 
 ## Nie umieszczaj wszystkiego w jednej warstwie
 
-## PRzydatne komendy
+## Zadanie - sprawdź działanie komend
 
-bitbake-layers show-recipes (łatwo połączyć z grepem)
+    bitbake-layers show-recipes (łatwo połączyć z grepem)
 
-oe-pkgdata-util find-path /usr/bin/python3
+    oe-pkgdata-util find-path /usr/bin/python3

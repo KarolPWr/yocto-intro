@@ -42,8 +42,6 @@ Mozemy to obejść przez wywoływanie tasku do_install:
     bitbake -c install nudoku
 
 
-
-
 ## Zadanie - dodaj flagi do kompilacji
 
 Dodaj flagi kompilacji -Wall -Wextra do kompilacji recepty.

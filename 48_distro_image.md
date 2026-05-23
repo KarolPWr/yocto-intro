@@ -7,7 +7,7 @@ DISTRO - definiuje "OS Policy" - globalne ustawienia, które aplikują się do k
 IMAGE - definiuje "Content" - czyli konkretny zestaw paczek i ficzerów na rootfs. Zdefiniowane w recepcie, czyli pliku .bb
 
 
-## Distro
+## Zadanie 1 - Distro
 
 Utwórz plik
 
@@ -29,7 +29,7 @@ Treść:
     # Move Global OS features from local.conf
     DISTRO_FEATURES:append = " apparmor"
 
-## Image
+## Zadanie 2 - Image
 
 Utwórz plik:
 

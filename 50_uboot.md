@@ -1,5 +1,7 @@
 ## Wstęp
 
+TODO: Wytłumaczyć w prezentacji ogólnie bootowanie ale bez mega szczegółów. Szczegóły ogarnie się potem w zadaniu z bootflow.
+
 Wejście do uboota:
 
 Zresetuj devboarda z podłączonym UARTem, naciskaj dowolny klawisz aż pokaże się prompt u-boota:
@@ -15,9 +17,38 @@ Zmienne środowiskowe:
 
     printenv
 
-## Zadanie
+## Zadanie - zmienie
 
-jakieś proste zadanie - rekonstrukcja bootflow'u? 
+Wyświetl zmienne środowiskowe używając komendy
+
+    printenv
+
+Ustaw nową zmienną o nazwie FOO używając komendy
+
+    setenv
+
+Sprawdź czy została ustawiona. Możesz ją również wyświetlić przez echo
+
+Zresetuj płytkę i sprawdź czy zmienna została zapisana. 
+
+Powtórz poprzednie kroki, ale tym razem użyj 
+
+    saveenv
+
+Żeby zapisać zmienne. Po kolejnym resecie sprawdź czy zmienna się zapisała. Następnie przywróć środowisku wartości domyślne za pomocą komendy:
+
+    env default -a
+    saveenv
+
+## Zadanie - rekonstrukcja bootflow
+
+Wywołaj komendę
+
+    printenv
+
+Widząc że cały flow zaczyna się od komendy bootcmd, przeanalizuj w jakis sposób krok po kroku przebiega bootowanie w u-boocie. 
+
+
 
 ## extlinux.conf
 

@@ -12,3 +12,13 @@ https://wiki.st.com/stm32mpu/wiki/How_to_create_your_own_machine
 
 a tutaj bootable devices:
 https://wiki.st.com/stm32mpu/wiki/STM32_MPU_OpenSTLinux_release_note#Bootdevice_labels
+
+Mój flow myślowy:
+Szukam jak jest zrobione DTBO w ST, kopiuję to
+Szukam jak wygląda główne DTS i podobne pliki, żeby zobaczyć jak są skonfigurowane LEDy
+
+Kopiuję ten kawałek do mojego własnego DTBO ze zmianami
+
+
+
+## TODO - ręczna kompilacja

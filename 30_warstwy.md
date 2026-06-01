@@ -31,7 +31,6 @@ Wybuduj:
 
     bitbake st-image-weston
 
-Jak naprawić ten błąd? 
 
     ERROR: Nothing RPROVIDES 'apparmor' (but /workdir/layers/meta-st/meta-st-openstlinux/recipes-st/images/st-image-weston.bb RDEPENDS on or otherwise requires it)
     apparmor was skipped: missing required distro feature 'apparmor' (not in DISTRO_FEATURES)

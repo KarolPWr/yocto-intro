@@ -6,7 +6,7 @@
 
 **Q: Co pojawiło się w workspace?**
 
-Otwieramy kontener w workspace:
+Otwieramy kontener w workspace (wywołujemy skrypt z dockerem z poprzedniego ćwiczenia):
 
     ~/start_yocto_env.sh
 
@@ -16,10 +16,12 @@ Konfigurujemy build env:
 
 Kopiujemy downloads i sstate-cache:
 
-#TODO copy DL and SSTATE
+#TODO copy DL i SSTATE
 
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
+Konfigurujemy ustawienia gita (bez tego niektóre paczki nie chcą się budować). Ustawienia będą widoczne tylko w kontenerze.
+
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
 
 Budujemy obraz:
 

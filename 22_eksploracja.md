@@ -1,22 +1,24 @@
+# Eksploracja systemu
+
 ## Komunikacja z płytką
 
 ### UART
 
-UART jest dostępny przy podłączeniu debugowym. 
+UART jest dostępny przy podłączeniu **debugowym. **
 
-Mamy otwarte dwa porty - ttyACM0 oraz ttyACM1 
+Mamy otwarte dwa porty: `ttyACM0` oraz `ttyACM1` 
 
 Żeby połączyć się z płytką z hosta wywołaj komendę:
 
-picocom -b 115200 /dev/ttyACM0 
+    picocom -b 115200 /dev/ttyACM0 
 
-Aby wyjść z picocoma: Ctrl+A, Ctrl+X
+Aby wyjść z picocoma: `Ctrl+A, Ctrl+X`
 
 ### SSH
 
-Po podłączeniu kabla ETH PC <-> płytka mamy dostęp do SSH
+Po podłączeniu kabla ETH PC <-> płytka mamy dostęp do SSH.
 
-Zaloguj się na płytce i sprawdź jej adres IP poleceniem
+Połącz się z płytką przez UART i sprawdź jej adres IP poleceniem:
 
     ifconfig
 
@@ -30,7 +32,7 @@ ODP: stm32mp25-disco/st-image-weston-openstlinux-weston-stm32mp25-disco.rootfs-2
 
 ## Zadanie - system stats
 
-Jakie zadanie spełniają /proc oraz /sys?
+Jakie zadanie spełniają `/proc` oraz `/sys`?
 
 Napisz skrypt w shellu, który: 
 
@@ -42,7 +44,7 @@ Co 20 sekund odczyta następujące wartości:
 I zapisze je do pliku w /var/log
 
 ## Zadanie - blink 
-Napisz program (może być skrypt w shellu), który zamiga zieloną diodą LED na płytce (oznaczenie LD8)
+Napisz program (np. skrypt w shellu), który zamiga **zieloną** diodą LED na płytce (oznaczenie LD8).
 
 Wykorzystaj poniższe informacje: 
 

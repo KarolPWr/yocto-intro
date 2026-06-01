@@ -1,3 +1,9 @@
+# Devicetree
+
+Główne devicetree dla płytki: 
+
+    build-openstlinuxweston-stm32mp25-disco/tmp-glibc/work-shared/stm32mp25-disco/kernel-source/arch/arm64/boot/dts/st/stm32mp257f-dk.dts
+
 Sciezka gdzie jest dtbo dla ST:
 
 /workspace/layers/meta-st/meta-st-stm32mp/recipes-kernel/linux-devicetree/dtbo-stm32mp21x

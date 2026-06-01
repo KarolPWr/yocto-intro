@@ -1,3 +1,5 @@
+# Instrukcja flashowania
+
 ## Tryby zasilania płytki
 
 Tryby:
@@ -37,24 +39,24 @@ Musimy zmodyfikować obraz i dodać budowanie plików dla EMMC.
 
 Dodaj na koniec pliku local.conf następujące linie:
 
-#TODO check comments
-
     BOOTDEVICE_LABELS += "emmc"
     STM32MP_DT_FILES_EMMC += "stm32mp257f-dk"
-    #EXTERNAL_DEVICETREE_EMMC = "stm32mp257f-dk-ca35tdcid-ostl"
-    #EXTERNAL_DEVICETREE_EMMC += "stm32mp257f-dk-ca35tdcid-ostl-m33-examples"
 
 Przebuduj obraz
 
     bitbake st-image-weston
 
-Do zapisania pamięci EMMC potrzebny będzie STM32_Programmer_CLI
+Do zapisania pamięci EMMC potrzebny będzie program (instrukcja instalacji jest w PDF z przygotowaniem)
 
-Przejdź do build-openstlinuxweston-stm32mp25-disco/tmp-glibc/deploy/images/stm32mp25-disco
+    STM32_Programmer_CLI
+
+Przejdź do:
+
+    build-openstlinuxweston-stm32mp25-disco/tmp-glibc/deploy/images/stm32mp25-disco
 
 Przełącz płytkę w tryb DFU: 
+- podłącz port USB DRD kablem USB-C do komputera
 - podłącz zasilacz do portu USB PWR
-- podłącz port USB DRD kablem do komputera
 
 Sprawdź czy płytka jest w trybie DFU:
 
@@ -72,4 +74,9 @@ Wgranie do EMMC za pomocą komendy:
 
 Jeśli nie zadziała USB1 - zobacz w outpucie z programmera, pod które USB podłączyła się płytka.
 
-Gdy komenda zakończy wgrywanie, odłącz kabel zasilania, przełącz boot switche w pozycję EMMC boot (0100)
+Gdy komenda zakończy wgrywanie: 
+
+- odłącz kabel zasilania, 
+- przełącz boot switche w pozycję EMMC boot (0100)
+- podłącz zasilanie (najlepiej w trybie debugowym)
+- sprawdź na monitorze czy wstało środowisko graficzne
